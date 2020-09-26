@@ -1,0 +1,16 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+
+<VBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <Label text="Чат:"/>
+    <TextArea editable = "false" fx:id="chat" prefHeight="150" style="-fx-border-color:
+     #74e3ff; -fx-border-width: 2 2 2 2;"/>
+
+    <Label text="Ввод сообщения:"/>
+    <TextArea fx:id="entryField" prefHeight="50" onKeyPressed="#enterPressed"/>
+
+    <Button text="Отправить" onMouseClicked="#btnClick"/>
+</VBox>
